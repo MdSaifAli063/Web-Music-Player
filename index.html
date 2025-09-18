@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playify - Web Player: Music for everyone</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Material Symbols (icon font, replaces SVG icons) -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400;700&FILL@0..1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Left sidebar -->
+    <aside class="left bg-elev-1" id="sidebar">
+      <button class="close" id="closeSidebar" aria-label="Close sidebar" title="Close sidebar">
+        <span class="material-symbols-rounded" aria-hidden="true">close</span>
+      </button>
+
+      <div class="home bg-elev-2 rounded m-1 p-1">
+        <div class="logo">
+          <!-- Text brand instead of SVG -->
+          <div class="brand" aria-label="Playify">Playify</div>
+        </div>
+        <ul class="nav-links">
+          <li class="active">
+            <span class="material-symbols-rounded" aria-hidden="true">home</span>
+            <span>Home</span>
+          </li>
+          <li>
+            <span class="material-symbols-rounded" aria-hidden="true">search</span>
+            <span>Search</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="library bg-elev-2 rounded m-1 p-1">
+        <div class="heading">
+          <span class="material-symbols-rounded" aria-hidden="true">library_music</span>
+          <h2>Your Library</h2>
+        </div>
+
+        <div class="songList" id="songList">
+          <ul id="songListUl"></ul>
+        </div>
+
+        <div class="footer">
+          <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+          <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+          <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right content -->
+    <main class="right bg-elev-1 rounded">
+      <header class="header">
+        <div class="nav">
+          <button class="hamburgerContainer" id="openSidebar" aria-label="Open sidebar" title="Open sidebar">
+            <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+          </button>
+          <div class="nav-arrows">
+            <button class="icon-btn" id="navBack" aria-label="Back" title="Back">
+              <span class="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+            </button>
+            <button class="icon-btn" id="navForward" aria-label="Forward" title="Forward">
+              <span class="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+            </button>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="signupbtn btn-ghost">Sign up</button>
+          <button class="loginbtn btn-primary">Log in</button>
+        </div>
+      </header>
+
+      <section class="spotifyPlaylists">
+        <h1>Featured Playlists</h1>
+        <div class="cardContainer" id="cardContainer"></div>
+      </section>
+
+      <footer class="playbar" id="playbar">
+        <div class="seekbar" id="seekbar">
+          <div class="progress" id="progress"></div>
+          <div class="circle" id="circle"></div>
+        </div>
+
+        <div class="abovebar">
+          <div class="songinfo" id="songinfo">
+            <!-- Default album cover (royalty-free placeholder) -->
+            <img
+              id="coverThumb"
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=200&h=200&fit=crop&auto=format&q=60"
+              alt="Cover" />
+            <div class="meta">
+              <div class="title" id="songTitle">Not Playing</div>
+              <div class="artist" id="songArtist"></div>
+            </div>
+            <button class="icon-btn" id="likeBtn" title="Like" aria-label="Like">
+              <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+            </button>
+          </div>
+
+          <div class="songbuttons">
+            <button class="icon-btn" id="shuffle" title="Shuffle" aria-label="Shuffle">
+              <span class="material-symbols-rounded" aria-hidden="true">shuffle</span>
+            </button>
+            <button class="icon-btn" id="previous" title="Previous" aria-label="Previous">
+              <span class="material-symbols-rounded" aria-hidden="true">skip_previous</span>
+            </button>
+            <button class="icon-btn big" id="play" title="Play/Pause" aria-label="Play/Pause">
+              <span class="material-symbols-rounded" id="playIcon" aria-hidden="true">play_arrow</span>
+            </button>
+            <button class="icon-btn" id="next" title="Next" aria-label="Next">
+              <span class="material-symbols-rounded" aria-hidden="true">skip_next</span>
+            </button>
+            <button class="icon-btn" id="repeat" title="Repeat" aria-label="Repeat">
+              <span class="material-symbols-rounded" aria-hidden="true">repeat</span>
+            </button>
+          </div>
+
+          <div class="timevol">
+            <div class="songtime">
+              <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+            </div>
+            <div class="volume">
+              <span class="material-symbols-rounded" aria-hidden="true">volume_up</span>
+              <div class="range">
+                <input type="range" min="0" max="1" step="0.01" id="volumeRange" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

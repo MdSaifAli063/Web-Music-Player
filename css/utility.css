@@ -1,0 +1,251 @@
+/* =========================================================
+   Utility classes - modern theme + UI helpers
+   Note: We override core color variables here to change theme.
+   ========================================================= */
+
+/* Theme variables (override existing with !important to ensure effect) */
+:root {
+  --bg: #0a0b14 !important;            /* Deep midnight */
+  --bg-elev-1: #0f1222 !important;      /* Dark indigo */
+  --bg-elev-2: #151935 !important;      /* Indigo surface */
+  --surface: #1a2042 !important;        /* Card surface */
+  --text: #e8eaf3 !important;           /* Primary text */
+  --muted: #9aa3b2 !important;          /* Secondary text */
+  --accent: #8b5cf6 !important;         /* Violet accent */
+  --accent-2: #22d3ee !important;       /* Cyan accent */
+  --danger: #f87171 !important;         /* Coral red */
+
+  --radius: 14px !important;
+  --radius-sm: 10px !important;
+
+  --shadow-1: 0 8px 24px rgba(0,0,0,0.35) !important;
+  --shadow-2: 0 12px 36px rgba(0,0,0,0.45) !important;
+}
+
+/* App background helper if needed */
+.app-bg {
+  background:
+    radial-gradient(1000px 700px at 80% -120px, color-mix(in oklab, #7c3aed 20%, transparent), transparent 60%),
+    radial-gradient(900px 600px at -10% -80px, color-mix(in oklab, #06b6d4 18%, transparent), transparent 60%),
+    var(--bg);
+  color: var(--text);
+}
+
+/* ---------------------------------------------------------
+   Layout
+   --------------------------------------------------------- */
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+.flex-wrap { flex-wrap: wrap; }
+.no-wrap, .nowrap { white-space: nowrap; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.grid { display: grid; }
+.grid-auto { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+
+/* ---------------------------------------------------------
+   Spacing scale
+   --------------------------------------------------------- */
+.m-0 { margin: 0; } .p-0 { padding: 0; }
+.m-1 { margin: 6px; } .p-1 { padding: 8px; }
+.m-2 { margin: 10px; } .p-2 { padding: 12px; }
+.m-3 { margin: 14px; } .p-3 { padding: 16px; }
+.mt-1 { margin-top: 6px; } .mb-1 { margin-bottom: 6px; }
+.ml-1 { margin-left: 6px; } .mr-1 { margin-right: 6px; }
+.mt-2 { margin-top: 10px; } .mb-2 { margin-bottom: 10px; }
+.ml-2 { margin-left: 10px; } .mr-2 { margin-right: 10px; }
+.gap-1 { gap: 8px; }
+.gap-2 { gap: 12px; }
+.gap-3 { gap: 16px; }
+
+/* ---------------------------------------------------------
+   Colors and backgrounds
+   --------------------------------------------------------- */
+.bg-black { background-color: #000; color: #fff; }
+.bg-elev-1 { background-color: var(--bg-elev-1); }
+.bg-elev-2 { background-color: var(--bg-elev-2); }
+.bg-surface { background-color: var(--surface); }
+.bg-gradient {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--surface) 85%, #ffffff 0%), var(--bg-elev-2));
+}
+
+.text-primary { color: var(--text); }
+.text-secondary, .text-muted { color: var(--muted); }
+.text-accent { color: var(--accent); }
+.text-accent-2 { color: var(--accent-2); }
+
+/* ---------------------------------------------------------
+   Borders and radii
+   --------------------------------------------------------- */
+.border { border: 1px solid rgba(255,255,255,0.12); }
+.border-strong { border: 1px solid rgba(255,255,255,0.22); }
+.border-accent { border: 1px solid color-mix(in oklab, var(--accent) 60%, transparent); }
+.rounded { border-radius: var(--radius); }
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-full { border-radius: 9999px; }
+
+/* ---------------------------------------------------------
+   Effects and motion
+   --------------------------------------------------------- */
+.invert { filter: invert(1); }
+.shadow-1 { box-shadow: var(--shadow-1); }
+.shadow-2 { box-shadow: var(--shadow-2); }
+.glass {
+  background: color-mix(in oklab, var(--bg-elev-2) 70%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.transition-base { transition: all .15s ease; }
+.no-select { user-select: none; }
+
+/* Focus ring helper (accessible) */
+.ring-focus {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+
+/* Opacity helpers */
+.opacity-0 { opacity: 0; }
+.opacity-50 { opacity: .5; }
+.opacity-75 { opacity: .75; }
+.opacity-100 { opacity: 1; }
+
+/* ---------------------------------------------------------
+   Typography helpers
+   --------------------------------------------------------- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-md { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.ellipsis {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   Components: buttons, badges, pills
+   Note: using 'body .btn-*' for higher specificity to override older rules
+   --------------------------------------------------------- */
+body .btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 8px; padding: 10px 16px;
+  border-radius: 999px; border: 1px solid transparent;
+  font-weight: 600; cursor: pointer; transition: background .15s ease, transform .1s ease, border-color .15s ease;
+}
+body .btn:active { transform: translateY(1px); }
+
+body .btn-primary {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 88%, #fff 0%), var(--accent));
+  color: #0b0b0b;
+  border-color: color-mix(in oklab, var(--accent) 60%, transparent);
+  box-shadow: 0 8px 18px rgba(139,92,246,0.35);
+}
+body .btn-primary:hover {
+  background: linear-gradient(180deg, var(--accent), color-mix(in oklab, var(--accent) 92%, #000 0%));
+}
+body .btn-primary:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+body .btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: rgba(255,255,255,.18);
+}
+body .btn-ghost:hover { background: rgba(255,255,255,.08); }
+
+.btn-danger {
+  background: color-mix(in oklab, var(--danger) 90%, #fff 0%);
+  color: #1a1a1a; border-color: color-mix(in oklab, var(--danger) 60%, transparent);
+}
+.btn-danger:hover { filter: brightness(1.05); }
+
+/* Small icon button */
+.icon-btn {
+  background: transparent; border: none; color: var(--text);
+  padding: 8px; border-radius: 10px; cursor: pointer;
+  transition: background .15s ease, transform .1s ease;
+}
+.icon-btn:hover { background: rgba(255,255,255,.08); transform: translateY(-1px); }
+.icon-btn:active { transform: translateY(0); }
+.icon-btn.big { padding: 10px 12px; border-radius: 50%; background: rgba(255,255,255,.06); }
+
+/* Badges and pills */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px;
+  font-size: 12px; color: var(--text);
+  background: color-mix(in oklab, var(--accent-2) 22%, transparent);
+  border: 1px solid color-mix(in oklab, var(--accent-2) 40%, transparent);
+}
+
+/* ---------------------------------------------------------
+   Accessibility helpers
+   --------------------------------------------------------- */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+.visible { visibility: visible !important; }
+.hidden { display: none !important; }
+
+/* Selection color */
+::selection {
+  background: color-mix(in oklab, var(--accent) 38%, transparent);
+  color: #0b0b0b;
+}
+
+/* ---------------------------------------------------------
+   Scrollbars (themed)
+   --------------------------------------------------------- */
+/* WebKit (Chrome/Safari/Edge) */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background-color: color-mix(in oklab, var(--accent-2) 30%, #ffffff00);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in oklab, var(--accent-2) 45%, #ffffff00);
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255,255,255,0.06);
+  border-radius: 999px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--accent-2) 35%, transparent) rgba(255,255,255,0.06);
+}
+
+/* ---------------------------------------------------------
+   Responsive helpers
+   --------------------------------------------------------- */
+@media (max-width: 860px) {
+  .hide-sm { display: none !important; }
+  .grid-auto { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  .p-1 { padding: 6px; } .m-1 { margin: 4px; }
+  .gap-1 { gap: 6px; }
+}

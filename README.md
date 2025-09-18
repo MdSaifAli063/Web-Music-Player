@@ -136,13 +136,7 @@ Sidebar becomes an off‑canvas drawer under 1024px (hamburger to open, close bu
 
 🖼️ Preview
 
-You can add screenshots to the repo and reference them here:
-
-docs/
- ├─ lightshot-1.png
- └─ lightshot-2.png
-
-Example embed:
+![image](https://github.com/MdSaifAli063/Web-Music-Player/blob/22bdc9c10a8fdb83e0d89f7df1a07f8c7a7bc926/Screenshot%202025-09-19%20012537.png)
 
 🧪 Troubleshooting
 

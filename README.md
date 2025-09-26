@@ -153,7 +153,7 @@ Please ensure your production assets (images/audio) are properly licensed for yo
 
 📄 License
 
-MIT License — free to use, modify, and distribute. See LICENSE for details.
+MIT License — free to use, modify, and distribute.
 
 🤝 Contributing
 

@@ -148,12 +148,12 @@ No extra wiring needed: the UI will render playlists and durations automatically
 - Icons look like empty squares: Ensure you have the Material Symbols link in the head and an active internet connection.
 - Green accents look too strong: Reduce --primary or remove subtle green mixes on hover in css/style.css.
 
-📜 Credits
+## 📜 Credits
 
-Audio samples: SoundHelix (Public demo MP3s) — https://www.soundhelix.com/
-Cover images: Unsplash placeholders — https://unsplash.com
-Icons: Material Symbols Rounded — https://fonts.google.com/icons
-Please ensure your production assets (images/audio) are properly licensed for your use.
+- Audio samples: SoundHelix (Public demo MP3s) — https://www.soundhelix.com/
+- Cover images: Unsplash placeholders — https://unsplash.com
+- Icons: Material Symbols Rounded — https://fonts.google.com/icons
+- Please ensure your production assets (images/audio) are properly licensed for your use.
 
 📄 License
 

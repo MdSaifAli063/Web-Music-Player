@@ -142,11 +142,11 @@ No extra wiring needed: the UI will render playlists and durations automatically
 - Repeat supports three modes: off → all → one
 - Sidebar becomes an off‑canvas drawer under 1024px (hamburger to open, close button inside)
 
-🧪 Troubleshooting
+## 🧪 Troubleshooting
 
-Audio won’t start automatically: Most browsers block autoplay with sound. Click the Play button once.
-Icons look like empty squares: Ensure you have the Material Symbols link in the head and an active internet connection.
-Green accents look too strong: Reduce --primary or remove subtle green mixes on hover in css/style.css.
+- Audio won’t start automatically: Most browsers block autoplay with sound. Click the Play button once.
+- Icons look like empty squares: Ensure you have the Material Symbols link in the head and an active internet connection.
+- Green accents look too strong: Reduce --primary or remove subtle green mixes on hover in css/style.css.
 
 📜 Credits
 

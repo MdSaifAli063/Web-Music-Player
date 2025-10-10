@@ -133,14 +133,14 @@ No extra wiring needed: the UI will render playlists and durations automatically
 - css/style.css — refined black/green theme, controls, responsive sidebar, accessible focus
 - js/script.js — Audio element setup, playlist rendering, queue management, seek, volume, repeat/shuffle, likes
 
-🧩 Implementation Notes
+## 🧩 Implementation Notes
 
-Audio is driven by a single HTMLAudioElement with JS event listeners
-Likes and volume are persisted with localStorage keys:
-playify_likes
-playify_volume
-Repeat supports three modes: off → all → one
-Sidebar becomes an off‑canvas drawer under 1024px (hamburger to open, close button inside)
+- Audio is driven by a single HTMLAudioElement with JS event listeners
+- Likes and volume are persisted with localStorage keys:
+- playify_likes
+- playify_volume
+- Repeat supports three modes: off → all → one
+- Sidebar becomes an off‑canvas drawer under 1024px (hamburger to open, close button inside)
 
 🧪 Troubleshooting
 

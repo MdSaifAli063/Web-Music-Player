@@ -127,11 +127,11 @@ const playlists = [
 ```
 No extra wiring needed: the UI will render playlists and durations automatically.
 
-🧭 Files Overview
+## 🧭 Files Overview
 
-index.html — semantic layout, Material Symbols, and basic structure
-css/style.css — refined black/green theme, controls, responsive sidebar, accessible focus
-js/script.js — Audio element setup, playlist rendering, queue management, seek, volume, repeat/shuffle, likes
+- index.html — semantic layout, Material Symbols, and basic structure
+- css/style.css — refined black/green theme, controls, responsive sidebar, accessible focus
+- js/script.js — Audio element setup, playlist rendering, queue management, seek, volume, repeat/shuffle, likes
 
 🧩 Implementation Notes
 

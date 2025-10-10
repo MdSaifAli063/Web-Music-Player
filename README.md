@@ -68,13 +68,13 @@ Note: Audio sources come from SoundHelix (CORS‑friendly). If you replace with 
 - Drag the seekbar or click to scrub
 - Adjust volume via the slider or arrow keys
 
-⌨️ Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
-Space: Play/Pause
-Arrow Right: Seek forward 5s
-Arrow Left: Seek backward 5s
-Arrow Up: Volume up
-Arrow Down: Volume down
+- Space: Play/Pause
+- Arrow Right: Seek forward 5s
+- Arrow Left: Seek backward 5s
+- Arrow Up: Volume up
+- Arrow Down: Volume down
 
 🎨 Customize
 

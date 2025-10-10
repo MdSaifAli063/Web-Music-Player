@@ -98,6 +98,7 @@ All theme variables live at the top of css/style.css under :root. Tweak these to
 - Add Your Songs
 - Open js/script.js and edit the tracks array:
 
+```bash
 const tracks = [
   {
     id: "my-1",
@@ -109,10 +110,11 @@ const tracks = [
   },
   // ...
 ];
-
+```
 
 Then optionally add your track IDs to a playlist in playlists:
 
+```bash
 const playlists = [
   {
     id: "pl-custom",
@@ -122,7 +124,7 @@ const playlists = [
     trackIds: ["my-1", "qodo-2", "qodo-3"],
   },
 ];
-
+```
 No extra wiring needed: the UI will render playlists and durations automatically.
 
 🧭 Files Overview

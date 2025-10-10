@@ -159,14 +159,14 @@ No extra wiring needed: the UI will render playlists and durations automatically
 
 MIT License — free to use, modify, and distribute.
 
-🤝 Contributing
+## 🤝 Contributing
 
 PRs are welcome! If you have UI tweaks, accessibility improvements, or new features:
 
-Fork the repo
-Create a feature branch
-Commit your changes
-Open a pull request
+- Fork the repo
+- Create a feature branch
+- Commit your changes
+- Open a pull request
 
 💬 Feedback
 

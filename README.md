@@ -168,6 +168,6 @@ PRs are welcome! If you have UI tweaks, accessibility improvements, or new featu
 - Commit your changes
 - Open a pull request
 
-💬 Feedback
+## 💬 Feedback
 
 Have an idea to make the player even better? Open an issue or drop suggestions in discussions. Enjoy the music! 🎵

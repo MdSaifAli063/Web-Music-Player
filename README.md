@@ -59,14 +59,14 @@ cd playify
   
 Note: Audio sources come from SoundHelix (CORS‑friendly). If you replace with your own files, ensure they are accessible from your server.
 
-🕹️ Usage
+## 🕹️ Usage
 
-Use the big Play button to start/stop playback
-Shuffle and Repeat toggle via their icons
-Click playlist cards to load their tracks and start playing
-Like button saves the current track (persists across sessions)
-Drag the seekbar or click to scrub
-Adjust volume via the slider or arrow keys
+- Use the big Play button to start/stop playback
+- Shuffle and Repeat toggle via their icons
+- Click playlist cards to load their tracks and start playing
+- Like button saves the current track (persists across sessions)
+- Drag the seekbar or click to scrub
+- Adjust volume via the slider or arrow keys
 
 ⌨️ Keyboard Shortcuts
 

@@ -155,7 +155,7 @@ No extra wiring needed: the UI will render playlists and durations automatically
 - Icons: Material Symbols Rounded — https://fonts.google.com/icons
 - Please ensure your production assets (images/audio) are properly licensed for your use.
 
-📄 License
+## 📄 License
 
 MIT License — free to use, modify, and distribute.
 

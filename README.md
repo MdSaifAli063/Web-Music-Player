@@ -45,8 +45,7 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 ```bash
 git clone <your-repo-url>
 cd playify
-
-
+```
 Run locally (pick one)
 VS Code Live Server (recommended): Right‑click index.html → Open with Live Server
 Python

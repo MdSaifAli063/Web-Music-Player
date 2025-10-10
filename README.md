@@ -76,11 +76,13 @@ Note: Audio sources come from SoundHelix (CORS‑friendly). If you replace with 
 - Arrow Up: Volume up
 - Arrow Down: Volume down
 
-🎨 Customize
+## 🎨 Customize
 
 Colors and Theme
+
 All theme variables live at the top of css/style.css under :root. Tweak these to quickly change the look:
 
+```bash
 :root {
   --bg: #0b0c0e;
   --text: #e8f3e8;
@@ -88,13 +90,13 @@ All theme variables live at the top of css/style.css under :root. Tweak these to
   --border: #23282d;
   /* ... */
 }
+```
 
-
-Brand and Icons
-Brand wordmark is a styled text element in index.html: Playify
-Icons use Material Symbols Rounded (Google Fonts). You can switch icons by changing their text content, e.g.: shuffle
-Add Your Songs
-Open js/script.js and edit the tracks array:
+- Brand and Icons
+- Brand wordmark is a styled text element in index.html: Playify
+- Icons use Material Symbols Rounded (Google Fonts). You can switch icons by changing their text content, e.g.: shuffle
+- Add Your Songs
+- Open js/script.js and edit the tracks array:
 
 const tracks = [
   {

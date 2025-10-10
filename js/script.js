@@ -20,71 +20,105 @@ const songs = [
     title: "Night Owl",
     artist: "Broke For Free",
     url: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3",
-    cover: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 2,
     title: "SoundHelix Song 1",
     artist: "T. Schürger",
     url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    cover: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 3,
     title: "Dreams",
     artist: "Joakim Karud",
     url: "https://cdn.pixabay.com/download/audio/2022/05/26/audio_91fc8b996c.mp3?filename=dreams-110734.mp3",
-    cover: "https://images.unsplash.com/photo-1521335629791-ce4aec67dd53?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1521335629791-ce4aec67dd53?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 4,
     title: "Corporate Motivation",
     artist: "Ashot Danielyan",
     url: "https://cdn.pixabay.com/download/audio/2022/10/15/audio_0d4d9b7092.mp3?filename=corporate-motivation-epic-121441.mp3",
-    cover: "https://images.unsplash.com/photo-1518188233306-4f06508e27b3?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1518188233306-4f06508e27b3?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 5,
     title: "Sevish - Vivid",
     artist: "Sevish",
     url: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Sevish/EDM_Compli/Sevish_-_02_-_Vivid.mp3",
-    cover: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 6,
     title: "Electro Cabello",
     artist: "Kevin MacLeod",
     url: "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Electro%20Cabello.mp3",
-    cover: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 7,
     title: "Sunrise Drive",
     artist: "RKVC",
     url: "https://cdn.pixabay.com/download/audio/2023/02/28/audio_ae1cf6408a.mp3?filename=sunrise-drive-140174.mp3",
-    cover: "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 8,
     title: "Epic Sport Rock",
     artist: "Alex Grohl",
     url: "https://cdn.pixabay.com/download/audio/2022/03/24/audio_fa6dfef8d4.mp3?filename=epic-sport-rock-113059.mp3",
-    cover: "https://images.unsplash.com/photo-1515777315835-281b94c9589a?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1515777315835-281b94c9589a?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 9,
     title: "Island",
     artist: "Declan DP",
     url: "https://cdn.pixabay.com/download/audio/2022/03/15/audio_946a8b672b.mp3?filename=island-110010.mp3",
-    cover: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&auto=format&fit=crop"
+    cover:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&auto=format&fit=crop",
   },
   {
     id: 10,
     title: "Acoustic Breeze",
     artist: "Benjamin Tissot",
     url: "https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3",
-    cover: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&q=80&auto=format&fit=crop"
-  }
+    cover:
+      "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&q=80&auto=format&fit=crop",
+  },
+  {
+    id: 11,
+    title: "SoundHelix Song 2",
+    artist: "SoundHelix",
+    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    cover:
+      "https://images.unsplash.com/photo-1506765515384-028b60a970df?w=600&q=80&auto=format&fit=crop",
+  },
+  {
+    id: 12,
+    title: "Sunny",
+    artist: "Ikson",
+    url: "https://cdn.pixabay.com/download/audio/2021/08/04/audio_9e20f1d1f7.mp3?filename=sunny-113242.mp3",
+    cover:
+      "https://images.unsplash.com/photo-1503264116251-35a269479413?w=600&q=80&auto=format&fit=crop",
+  },
+  {
+    id: 13,
+    title: "Better Days",
+    artist: "Bensound",
+    url: "https://www.bensound.com/bensound-music/bensound-betterdays.mp3",
+    cover:
+      "https://images.unsplash.com/photo-1444671946638-0b8d9b8f4d62?w=600&q=80&auto=format&fit=crop",
+  },
 ];
 
 // Featured playlists
@@ -93,37 +127,42 @@ const playlists = [
     id: "chill-vibes",
     title: "Chill Vibes",
     desc: "Lo-fi, mellow and cozy tracks.",
-    cover: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80&auto=format&fit=crop",
-    songs: [1, 3, 5, 7, 9]
+    cover:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80&auto=format&fit=crop",
+    songs: [1, 3, 5, 7, 9],
   },
   {
     id: "focus-beats",
     title: "Focus Beats",
     desc: "Keep your head in the game.",
-    cover: "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?w=800&q=80&auto=format&fit=crop",
-    songs: [2, 4, 6, 3]
+    cover:
+      "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?w=800&q=80&auto=format&fit=crop",
+    songs: [2, 4, 6, 3],
   },
   {
     id: "indie-mix",
     title: "Indie Mix",
     desc: "Fresh finds, indie flavor.",
-    cover: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=80&auto=format&fit=crop",
-    songs: [1, 2, 3, 4, 5]
+    cover:
+      "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=800&q=80&auto=format&fit=crop",
+    songs: [1, 2, 3, 4, 5],
   },
   {
     id: "workout-boost",
     title: "Workout Boost",
     desc: "High-energy to power your reps.",
-    cover: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80&auto=format&fit=crop",
-    songs: [8, 5, 2, 6, 7]
+    cover:
+      "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80&auto=format&fit=crop",
+    songs: [8, 5, 2, 6, 7],
   },
   {
     id: "acoustic-sunday",
     title: "Acoustic Sunday",
     desc: "Easy like Sunday morning.",
-    cover: "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=800&q=80&auto=format&fit=crop",
-    songs: [10, 9, 3]
-  }
+    cover:
+      "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=800&q=80&auto=format&fit=crop",
+    songs: [10, 9, 3],
+  },
 ];
 
 /* ------------------------ State ------------------------ */
@@ -135,7 +174,9 @@ let isPlaying = false;
 let isSeeking = false;
 let isShuffle = JSON.parse(localStorage.getItem("playify_shuffle") || "false");
 let repeatMode = localStorage.getItem("playify_repeat") || "off"; // off | all | one
-let likedSet = new Set(JSON.parse(localStorage.getItem("playify_likes") || "[]"));
+let likedSet = new Set(
+  JSON.parse(localStorage.getItem("playify_likes") || "[]")
+);
 
 const savedVolume = parseFloat(localStorage.getItem("playify_volume") || "0.8");
 
@@ -151,6 +192,7 @@ const cardContainer = el("cardContainer");
 
 const playbar = el("playbar");
 const playBtn = el("play");
+const playIcon = el("playIcon"); // <-- NEW: material icon span inside play button (fallback handled below)
 const nextBtn = el("next");
 const prevBtn = el("previous");
 const shuffleBtn = el("shuffle");
@@ -175,6 +217,7 @@ const navForward = el("navForward");
 /* ------------------------ Audio ------------------------ */
 const audio = new Audio();
 audio.preload = "metadata";
+audio.crossOrigin = "anonymous"; // help with some hosts that allow CORS; harmless otherwise
 audio.volume = Number.isFinite(savedVolume) ? savedVolume : 0.8;
 
 /* ------------------------ Utils ------------------------ */
@@ -198,6 +241,19 @@ function shuffleArray(arr) {
   return out;
 }
 
+function percentFromEvent(e) {
+  const rect = seekbar.getBoundingClientRect();
+  // Support mouse and touch
+  let clientX = 0;
+  if (e.touches && e.touches[0]) clientX = e.touches[0].clientX;
+  else if (e.changedTouches && e.changedTouches[0])
+    clientX = e.changedTouches[0].clientX;
+  else if (typeof e.clientX === "number") clientX = e.clientX;
+  const x = clientX - rect.left;
+  const p = x / rect.width;
+  return Math.max(0, Math.min(1, p));
+}
+
 /* ------------------------ Rendering ------------------------ */
 function renderSongList() {
   songListUl.innerHTML = "";
@@ -206,13 +262,15 @@ function renderSongList() {
     const li = document.createElement("li");
     li.dataset.index = String(idx);
     li.innerHTML = `
-      <div class="index">${idx + 1}</div>
-      <div class="meta">
-        <div class="title">${s.title}</div>
-        <div class="artist">${s.artist}</div>
+      <div class="song-index">${idx + 1}</div>
+      <div class="song-meta">
+        <div class="song-title">${s.title}</div>
+        <div class="song-artist">${s.artist}</div>
       </div>
-      <button class="icon-btn play-small" aria-label="Play ${s.title}">
-        <img class="invert" width="20" src="img/play.svg" alt="Play">
+      <button class="icon-btn play-small" aria-label="Play ${
+        s.title
+      }" title="Play">
+        <span class="material-symbols-rounded" aria-hidden="true">play_arrow</span>
       </button>
     `;
     // Highlight current
@@ -220,8 +278,18 @@ function renderSongList() {
       li.style.background = "rgba(255,255,255,.06)";
       li.setAttribute("aria-current", "true");
     }
+    // Row click -> load & play
     li.addEventListener("click", (e) => {
-      // If click came from the play button or anywhere in li
+      const liIndex = Number(li.dataset.index);
+      if (!Number.isNaN(liIndex)) {
+        loadSongByIndex(liIndex);
+        playCurrent();
+      }
+    });
+    // Play button inside row - stop propagation so row click doesn't fire twice
+    const btn = li.querySelector(".play-small");
+    btn?.addEventListener("click", (ev) => {
+      ev.stopPropagation();
       const liIndex = Number(li.dataset.index);
       if (!Number.isNaN(liIndex)) {
         loadSongByIndex(liIndex);
@@ -277,6 +345,20 @@ function updateNowPlayingUI() {
 }
 
 function updatePlayButtonUI() {
+  // Prefer material icon span; if absent, fallback to <img> approach
+  if (playIcon) {
+    if (isPlaying) {
+      playIcon.textContent = "pause";
+      playBtn.title = "Pause";
+      playBtn.setAttribute("aria-pressed", "true");
+    } else {
+      playIcon.textContent = "play_arrow";
+      playBtn.title = "Play";
+      playBtn.setAttribute("aria-pressed", "false");
+    }
+    return;
+  }
+  // Fallback: handle img inside play button (older markup)
   const img = playBtn.querySelector("img");
   if (!img) return;
   if (isPlaying) {
@@ -310,7 +392,12 @@ function setPlaylist(playlistId, autoplay = false) {
   if (!pl) return;
 
   baseQueue = pl.songs.slice();
-  queue = isShuffle ? [getSongById(currentSongId())?.id || baseQueue[0], ...shuffleArray(baseQueue.filter((id) => id !== currentSongId()))] : baseQueue.slice();
+  queue = isShuffle
+    ? [
+        getSongById(currentSongId())?.id || baseQueue[0],
+        ...shuffleArray(baseQueue.filter((id) => id !== currentSongId())),
+      ]
+    : baseQueue.slice();
   currentIndex = 0;
 
   renderSongList();
@@ -329,25 +416,51 @@ function loadSongByIndex(index) {
   const s = getSongById(queue[currentIndex]);
   if (!s) return;
 
-  audio.src = s.url;
+  // Stop current audio if playing
+  audio.pause();
   audio.currentTime = 0;
-  updateNowPlayingUI();
 
-  // Reset times until metadata loads
+  // Set new source
+  audio.src = s.url;
+
+  // Force load and handle errors
+  try {
+    audio.load();
+    // Wait for metadata before allowing play
+    audio.addEventListener("loadedmetadata", function onMetadata() {
+      updateNowPlayingUI();
+      audio.removeEventListener("loadedmetadata", onMetadata);
+    });
+  } catch (err) {
+    console.error("Error loading audio:", err);
+    nextSong(); // Skip to next song on load error
+    return;
+  }
+
+  updateNowPlayingUI();
+  // Reset times
   currentTimeEl.textContent = "0:00";
-  totalTimeEl.textContent = "0:00";
+  totalTimeEl.textContent = formatTime(audio.duration || 0);
   updateSeekbarUI(0);
 }
 
 async function playCurrent() {
-  try {
-    await audio.play();
-    isPlaying = true;
-  } catch (e) {
-    // Autoplay restrictions likely; require user gesture
-    isPlaying = false;
+  if (!audio.src) {
+    loadSongByIndex(currentIndex);
   }
-  updatePlayButtonUI();
+
+  try {
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      await playPromise;
+      isPlaying = true;
+      updatePlayButtonUI();
+    }
+  } catch (err) {
+    console.error("Playback failed:", err);
+    isPlaying = false;
+    updatePlayButtonUI();
+  }
 }
 
 function pauseCurrent() {
@@ -446,13 +559,6 @@ function updateSeekbarUI(percent) {
   circle.style.left = `${percent * 100}%`;
 }
 
-function percentFromEvent(e) {
-  const rect = seekbar.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const p = x / rect.width;
-  return Math.max(0, Math.min(1, p));
-}
-
 function seekToPercent(p) {
   if (!Number.isFinite(audio.duration)) return;
   audio.currentTime = audio.duration * p;
@@ -460,31 +566,40 @@ function seekToPercent(p) {
 
 /* ------------------------ Event Listeners ------------------------ */
 function bindEvents() {
-  // Sidebar
-  openSidebarBtn?.addEventListener("click", () => sidebar.classList.add("show"));
-  closeSidebarBtn?.addEventListener("click", () => sidebar.classList.remove("show"));
+  // Sidebar open/close must toggle 'open' class (CSS expects .left.open)
+  openSidebarBtn?.addEventListener("click", () =>
+    sidebar.classList.add("open")
+  );
+  closeSidebarBtn?.addEventListener("click", () =>
+    sidebar.classList.remove("open")
+  );
 
   // Browser navigation buttons
   navBack?.addEventListener("click", () => history.back());
   navForward?.addEventListener("click", () => history.forward());
 
-  // Core controls
-  playBtn.addEventListener("click", togglePlay);
-  nextBtn.addEventListener("click", nextSong);
-  prevBtn.addEventListener("click", prevSong);
-  shuffleBtn.addEventListener("click", toggleShuffle);
-  repeatBtn.addEventListener("click", cycleRepeat);
-  likeBtn.addEventListener("click", toggleLike);
+  // Core controls (made defensive)
+  playBtn?.addEventListener("click", togglePlay);
+  nextBtn?.addEventListener("click", nextSong);
+  prevBtn?.addEventListener("click", prevSong);
+  shuffleBtn?.addEventListener("click", toggleShuffle);
+  repeatBtn?.addEventListener("click", cycleRepeat);
+  likeBtn?.addEventListener("click", toggleLike);
 
   // Volume
-  volumeRange.value = String(audio.volume);
-  volumeRange.addEventListener("input", (e) => {
-    const v = parseFloat(e.target.value);
-    audio.volume = Number.isFinite(v) ? v : 0.8;
-    localStorage.setItem("playify_volume", String(audio.volume));
-  });
+  if (volumeRange) {
+    volumeRange.min = "0";
+    volumeRange.max = "1";
+    volumeRange.step = "0.01";
+    volumeRange.value = String(audio.volume);
+    volumeRange.addEventListener("input", (e) => {
+      const v = parseFloat(e.target.value);
+      audio.volume = Number.isFinite(v) ? v : 0.8;
+      localStorage.setItem("playify_volume", String(audio.volume));
+    });
+  }
 
-  // Seekbar interactions
+  // Seekbar interactions (mouse + touch)
   seekbar.addEventListener("mousedown", (e) => {
     isSeeking = true;
     const p = percentFromEvent(e);
@@ -502,36 +617,52 @@ function bindEvents() {
     isSeeking = false;
   });
 
+  // Touch support
+  seekbar.addEventListener(
+    "touchstart",
+    (e) => {
+      isSeeking = true;
+      const p = percentFromEvent(e);
+      updateSeekbarUI(p);
+      e.preventDefault();
+    },
+    { passive: false }
+  );
+  window.addEventListener(
+    "touchmove",
+    (e) => {
+      if (!isSeeking) return;
+      const p = percentFromEvent(e);
+      updateSeekbarUI(p);
+    },
+    { passive: false }
+  );
+  window.addEventListener("touchend", (e) => {
+    if (!isSeeking) return;
+    // use circle left as last-known position
+    const left = parseFloat(circle.style.left || "0");
+    seekToPercent(left / 100);
+    isSeeking = false;
+  });
+
   // Click-to-seek (for taps)
   seekbar.addEventListener("click", (e) => {
     const p = percentFromEvent(e);
     seekToPercent(p);
   });
 
-  // Audio events
+  // Audio events with error handling
   audio.addEventListener("loadedmetadata", () => {
-    totalTimeEl.textContent = formatTime(audio.duration);
-  });
-
-  audio.addEventListener("timeupdate", () => {
-    if (!isSeeking && Number.isFinite(audio.duration)) {
-      const p = audio.currentTime / audio.duration;
-      updateSeekbarUI(p);
+    if (Number.isFinite(audio.duration)) {
+      totalTimeEl.textContent = formatTime(audio.duration);
+      currentTimeEl.textContent = formatTime(audio.currentTime);
+      updateSeekbarUI((audio.currentTime || 0) / audio.duration);
     }
-    currentTimeEl.textContent = formatTime(audio.currentTime);
   });
 
-  audio.addEventListener("play", () => {
-    isPlaying = true;
-    updatePlayButtonUI();
-  });
-  audio.addEventListener("pause", () => {
-    isPlaying = false;
-    updatePlayButtonUI();
-  });
-
-  audio.addEventListener("ended", () => {
-    nextSong();
+  audio.addEventListener("error", (e) => {
+    console.error("Audio error:", e.target.error);
+    setTimeout(() => nextSong(), 1000); // Try next song after error
   });
 
   // Keyboard shortcuts
@@ -546,7 +677,10 @@ function bindEvents() {
         togglePlay();
         break;
       case "ArrowRight":
-        audio.currentTime = Math.min(audio.currentTime + 5, audio.duration || audio.currentTime + 5);
+        audio.currentTime = Math.min(
+          audio.currentTime + 5,
+          audio.duration || audio.currentTime + 5
+        );
         break;
       case "ArrowLeft":
         audio.currentTime = Math.max(audio.currentTime - 5, 0);
@@ -613,4 +747,10 @@ function init() {
   bindEvents();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  // If the script runs after DOMContentLoaded (script at end of body),
+  // call init immediately so the app initializes correctly.
+  init();
+}

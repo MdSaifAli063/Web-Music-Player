@@ -35,7 +35,7 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 ---
 ## 🖼️ Preview
 
-  ![image](https://github.com/MdSaifAli063/Web-Music-Player/blob/22bdc9c10a8fdb83e0d89f7df1a07f8c7a7bc926/Screenshot%202025-09-19%20012537.png)
+  ![image](https://github.com/MdSaifAli063/Web-Music-Player/blob/29d5e820506ffba61d536256df9ddd25269c5a59/Screenshot%202025-10-11%20013114_edited.png)
 
 ---
 ## 🚀 Getting Started

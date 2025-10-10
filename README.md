@@ -33,7 +33,11 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 
 
 ---
+## 🖼️ Preview
 
+  ![image](https://github.com/MdSaifAli063/Web-Music-Player/blob/22bdc9c10a8fdb83e0d89f7df1a07f8c7a7bc926/Screenshot%202025-09-19%20012537.png)
+
+---
 ## 🚀 Getting Started
 
 1) Clone or download this repository
@@ -41,42 +45,44 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 ```bash
 git clone <your-repo-url>
 cd playify
-
-
-Run locally (pick one)
-VS Code Live Server (recommended): Right‑click index.html → Open with Live Server
-Python
-Python 3: python3 -m http.server 5173
-Python 2: python -m SimpleHTTPServer 5173
-Node
-npx serve .
-npx http-server -p 5173
-Open in browser
-http://localhost:5173 (or your chosen port)
+```
+- Run locally (pick one)
+- VS Code Live Server (recommended): Right‑click index.html → Open with Live Server
+- Python
+- Python 3: python3 -m http.server 5173
+- Python 2: python -m SimpleHTTPServer 5173
+- Node
+- npx serve .
+- npx http-server -p 5173
+- Open in browser
+- http://localhost:5173 (or your chosen port)
+  
 Note: Audio sources come from SoundHelix (CORS‑friendly). If you replace with your own files, ensure they are accessible from your server.
 
-🕹️ Usage
+## 🕹️ Usage
 
-Use the big Play button to start/stop playback
-Shuffle and Repeat toggle via their icons
-Click playlist cards to load their tracks and start playing
-Like button saves the current track (persists across sessions)
-Drag the seekbar or click to scrub
-Adjust volume via the slider or arrow keys
+- Use the big Play button to start/stop playback
+- Shuffle and Repeat toggle via their icons
+- Click playlist cards to load their tracks and start playing
+- Like button saves the current track (persists across sessions)
+- Drag the seekbar or click to scrub
+- Adjust volume via the slider or arrow keys
 
-⌨️ Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
-Space: Play/Pause
-Arrow Right: Seek forward 5s
-Arrow Left: Seek backward 5s
-Arrow Up: Volume up
-Arrow Down: Volume down
+- Space: Play/Pause
+- Arrow Right: Seek forward 5s
+- Arrow Left: Seek backward 5s
+- Arrow Up: Volume up
+- Arrow Down: Volume down
 
-🎨 Customize
+## 🎨 Customize
 
 Colors and Theme
+
 All theme variables live at the top of css/style.css under :root. Tweak these to quickly change the look:
 
+```bash
 :root {
   --bg: #0b0c0e;
   --text: #e8f3e8;
@@ -84,14 +90,15 @@ All theme variables live at the top of css/style.css under :root. Tweak these to
   --border: #23282d;
   /* ... */
 }
+```
 
+- Brand and Icons
+- Brand wordmark is a styled text element in index.html: Playify
+- Icons use Material Symbols Rounded (Google Fonts). You can switch icons by changing their text content, e.g.: shuffle
+- Add Your Songs
+- Open js/script.js and edit the tracks array:
 
-Brand and Icons
-Brand wordmark is a styled text element in index.html: Playify
-Icons use Material Symbols Rounded (Google Fonts). You can switch icons by changing their text content, e.g.: shuffle
-Add Your Songs
-Open js/script.js and edit the tracks array:
-
+```bash
 const tracks = [
   {
     id: "my-1",
@@ -103,10 +110,11 @@ const tracks = [
   },
   // ...
 ];
-
+```
 
 Then optionally add your track IDs to a playlist in playlists:
 
+```bash
 const playlists = [
   {
     id: "pl-custom",
@@ -116,60 +124,50 @@ const playlists = [
     trackIds: ["my-1", "qodo-2", "qodo-3"],
   },
 ];
-
+```
 No extra wiring needed: the UI will render playlists and durations automatically.
 
-🧭 Files Overview
+## 🧭 Files Overview
 
-index.html — semantic layout, Material Symbols, and basic structure
-css/style.css — refined black/green theme, controls, responsive sidebar, accessible focus
-js/script.js — Audio element setup, playlist rendering, queue management, seek, volume, repeat/shuffle, likes
+- index.html — semantic layout, Material Symbols, and basic structure
+- css/style.css — refined black/green theme, controls, responsive sidebar, accessible focus
+- js/script.js — Audio element setup, playlist rendering, queue management, seek, volume, repeat/shuffle, likes
 
-🧩 Implementation Notes
+## 🧩 Implementation Notes
 
-Audio is driven by a single HTMLAudioElement with JS event listeners
-Likes and volume are persisted with localStorage keys:
-playify_likes
-playify_volume
-Repeat supports three modes: off → all → one
-Sidebar becomes an off‑canvas drawer under 1024px (hamburger to open, close button inside)
+- Audio is driven by a single HTMLAudioElement with JS event listeners
+- Likes and volume are persisted with localStorage keys:
+- playify_likes
+- playify_volume
+- Repeat supports three modes: off → all → one
+- Sidebar becomes an off‑canvas drawer under 1024px (hamburger to open, close button inside)
 
-🖼️ Preview
+## 🧪 Troubleshooting
 
-You can add screenshots to the repo and reference them here:
+- Audio won’t start automatically: Most browsers block autoplay with sound. Click the Play button once.
+- Icons look like empty squares: Ensure you have the Material Symbols link in the head and an active internet connection.
+- Green accents look too strong: Reduce --primary or remove subtle green mixes on hover in css/style.css.
 
-docs/
- ├─ lightshot-1.png
- └─ lightshot-2.png
+## 📜 Credits
 
-Example embed:
+- Audio samples: SoundHelix (Public demo MP3s) — https://www.soundhelix.com/
+- Cover images: Unsplash placeholders — https://unsplash.com
+- Icons: Material Symbols Rounded — https://fonts.google.com/icons
+- Please ensure your production assets (images/audio) are properly licensed for your use.
 
-🧪 Troubleshooting
+## 📄 License
 
-Audio won’t start automatically: Most browsers block autoplay with sound. Click the Play button once.
-Icons look like empty squares: Ensure you have the Material Symbols link in the head and an active internet connection.
-Green accents look too strong: Reduce --primary or remove subtle green mixes on hover in css/style.css.
+MIT License — free to use, modify, and distribute.
 
-📜 Credits
-
-Audio samples: SoundHelix (Public demo MP3s) — https://www.soundhelix.com/
-Cover images: Unsplash placeholders — https://unsplash.com
-Icons: Material Symbols Rounded — https://fonts.google.com/icons
-Please ensure your production assets (images/audio) are properly licensed for your use.
-
-📄 License
-
-MIT License — free to use, modify, and distribute. See LICENSE for details.
-
-🤝 Contributing
+## 🤝 Contributing
 
 PRs are welcome! If you have UI tweaks, accessibility improvements, or new features:
 
-Fork the repo
-Create a feature branch
-Commit your changes
-Open a pull request
+- Fork the repo
+- Create a feature branch
+- Commit your changes
+- Open a pull request
 
-💬 Feedback
+## 💬 Feedback
 
 Have an idea to make the player even better? Open an issue or drop suggestions in discussions. Enjoy the music! 🎵

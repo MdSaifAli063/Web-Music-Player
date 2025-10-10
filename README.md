@@ -51,11 +51,12 @@ cd playify
 - Python
 - Python 3: python3 -m http.server 5173
 - Python 2: python -m SimpleHTTPServer 5173
-Node
+- Node
 - npx serve .
 - npx http-server -p 5173
 - Open in browser
 - http://localhost:5173 (or your chosen port)
+  
 Note: Audio sources come from SoundHelix (CORS‑friendly). If you replace with your own files, ensure they are accessible from your server.
 
 🕹️ Usage

@@ -46,16 +46,16 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 git clone <your-repo-url>
 cd playify
 ```
-Run locally (pick one)
-VS Code Live Server (recommended): Right‑click index.html → Open with Live Server
-Python
-Python 3: python3 -m http.server 5173
-Python 2: python -m SimpleHTTPServer 5173
+- Run locally (pick one)
+- VS Code Live Server (recommended): Right‑click index.html → Open with Live Server
+- Python
+- Python 3: python3 -m http.server 5173
+- Python 2: python -m SimpleHTTPServer 5173
 Node
-npx serve .
-npx http-server -p 5173
-Open in browser
-http://localhost:5173 (or your chosen port)
+- npx serve .
+- npx http-server -p 5173
+- Open in browser
+- http://localhost:5173 (or your chosen port)
 Note: Audio sources come from SoundHelix (CORS‑friendly). If you replace with your own files, ensure they are accessible from your server.
 
 🕹️ Usage

@@ -31,6 +31,7 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 . ├── index.html # App markup and layout ├── css/ │ └── style.css # Theme, layout, components, responsive rules └── js/ └── script.js # Playback logic, UI wiring, playlists/tracks
 
 ---
+
 ## 🖼️ Preview
 
   ![image](https://github.com/MdSaifAli063/Web-Music-Player/blob/29d5e820506ffba61d536256df9ddd25269c5a59/Screenshot%202025-10-11%20013114_edited.png)

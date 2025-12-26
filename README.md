@@ -30,7 +30,6 @@ A modern, responsive web music player with a sleek black-and-green aesthetic, sm
 
 . ├── index.html # App markup and layout ├── css/ │ └── style.css # Theme, layout, components, responsive rules └── js/ └── script.js # Playback logic, UI wiring, playlists/tracks
 
-
 ---
 ## 🖼️ Preview
 
